@@ -1,0 +1,15 @@
+type Room @model  @auth(rules: [{allow: owner}]) {
+ 	id: ID!
+	name: String!
+	checkIn: String!
+	checkOut: String!
+	totalDays: Int!
+  totalprice: Int
+  showBooking: Boolean
+  dbooking: Boolean
+  showPayment: Boolean
+  bookingMsg: Boolean
+
+
+
+}

@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "hotelbookingappmain",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authhotelbookingappmainf6f9b979",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
